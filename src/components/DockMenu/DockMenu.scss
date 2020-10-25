@@ -1,0 +1,44 @@
+.dock-menu {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 72px;
+  overflow: hidden;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0 47px;
+    background: #FFFFFF;
+    border-radius: 10px 10px 0 0;
+
+    &-item {
+      height: 100%;
+      display: inherit;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+
+      &:hover {
+        path {
+          fill: #911838;
+        }
+      }
+
+      &-link {
+        text-decoration: none;
+
+        &-icon {
+          path {
+            fill: black;
+            transition: fill 0.3s linear;
+          }
+        }
+      }
+    }
+  }
+}

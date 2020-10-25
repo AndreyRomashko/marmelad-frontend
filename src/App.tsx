@@ -4,31 +4,19 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
 } from "react-router-dom";
 import Authorization from "./pages/Authorization/Authorization";
 import Products from "./pages/Products/Products";
 import Main from "./pages/Main/Main";
+import DockMenu from "./components/DockMenu/DockMenu";
+import Rectangle from "./components/Rectangle/Rectangle";
 
 function App() {
     return (
         <div className="App">
             <Router>
                 <div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <Link to="/">Home</Link>
-                            </li>
-                            <li>
-                                <Link to="/products">Products</Link>
-                            </li>
-                            <li>
-                                <Link to="/auth">Sign up | Login </Link>
-                            </li>
-                        </ul>
-                    </nav>
-
+                    <Rectangle/>
                     {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
                     <Switch>
@@ -43,6 +31,8 @@ function App() {
                         </Route>
                     </Switch>
                 </div>
+                <DockMenu/>
+
             </Router>
         </div>
     );
