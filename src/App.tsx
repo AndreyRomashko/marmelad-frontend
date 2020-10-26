@@ -9,14 +9,12 @@ import Authorization from "./pages/Authorization/Authorization";
 import Products from "./pages/Products/Products";
 import Main from "./pages/Main/Main";
 import DockMenu from "./components/DockMenu/DockMenu";
-import Rectangle from "./components/Rectangle/Rectangle";
 
 function App() {
     return (
         <div className="App">
             <Router>
                 <div>
-                    <Rectangle/>
                     {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
                     <Switch>
