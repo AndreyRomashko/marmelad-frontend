@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 import {Field, Form, Formik} from "formik";
 import Buttons from "../Common/Buttons/Buttons";
 import "./Registration.scss";
+import PasswordInfo from "./PasswordInfo/PasswordInfo";
+import Fields from './Fields/Fields';
 
 const Registration: React.FC = () => {
     return (
@@ -14,18 +16,8 @@ const Registration: React.FC = () => {
                 onSubmit={(event) => console.log(event)}>
                 {({}) => (
                     <Form className="registration__form">
-                        <label className="field__label">
-                            Email
-                        </label>
-                        <Field type="email" name="email" className="field" placeholder="email@email.com"/>
-                        <label className="field__label">
-                            Password
-                        </label>
-                        <Field type="password" name="password" className="field" placeholder="Password"/>
-                        <label className="field__label">
-                            Repeat password
-                        </label>
-                        <Field type="password" name="password" className="field" placeholder="Password"/>
+                        <Fields/>
+                        <PasswordInfo/>
                         <label className="checkbox__label">
                             <Field type="checkbox" name="checked" value="Agree" className="registration__form-input"/>
                             <span className="checkbox__checkmark"></span>

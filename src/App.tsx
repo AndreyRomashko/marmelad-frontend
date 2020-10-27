@@ -29,7 +29,7 @@ function App() {
                         </Route>
                     </Switch>
                 </div>
-                <DockMenu/>
+                {/*<DockMenu/>*/}
 
             </Router>
         </div>
