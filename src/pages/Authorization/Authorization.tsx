@@ -6,6 +6,7 @@ import Registration from "./Registration/Registration";
 const Authorization: React.FC = () => {
     return (
         <>
+            {/*<Login/>*/}
             <Registration/>
         </>
     );

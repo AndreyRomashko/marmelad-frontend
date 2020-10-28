@@ -9,6 +9,7 @@ import Authorization from "./pages/Authorization/Authorization";
 import Products from "./pages/Products/Products";
 import Main from "./pages/Main/Main";
 import DockMenu from "./components/DockMenu/DockMenu";
+import Cosmetics from "./pages/Cosmetics/Cosmetics";
 
 function App() {
     return (
@@ -23,6 +24,9 @@ function App() {
                         </Route>
                         <Route path="/products">
                             <Products/>
+                        </Route>
+                        <Route path="/cosmetics">
+                            <Cosmetics/>
                         </Route>
                         <Route path="/">
                             <Main/>
