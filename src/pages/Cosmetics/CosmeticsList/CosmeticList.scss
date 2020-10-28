@@ -8,3 +8,9 @@
   display: flex;
   width: calc(100% - 32px);
 }
+
+@media only screen and (max-width: 382px) {
+  .cosmetics-list {
+    justify-content: center;
+  }
+}
