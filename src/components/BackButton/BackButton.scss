@@ -1,0 +1,17 @@
+.back-button {
+  width: 56px;
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 15px;
+  background: #252525;
+  opacity: 0.8;
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    width: fit-content;
+  }
+}

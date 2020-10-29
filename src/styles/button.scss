@@ -1,0 +1,21 @@
+.main-button {
+  background: #911838;
+  border: none;
+  height: 54px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FDEAE3;
+  padding: 0 20%;
+
+  &__big {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main-button {
+    width: 100%;
+  }
+}

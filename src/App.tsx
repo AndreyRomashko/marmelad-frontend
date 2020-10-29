@@ -10,6 +10,7 @@ import Products from "./pages/Products/Products";
 import Main from "./pages/Main/Main";
 import DockMenu from "./components/DockMenu/DockMenu";
 import Cosmetics from "./pages/Cosmetics/Cosmetics";
+import CosmeticsPage from "./pages/Cosmetics/Page/CosmeticsPage";
 
 function App() {
     return (
@@ -27,6 +28,9 @@ function App() {
                         </Route>
                         <Route path="/cosmetics">
                             <Cosmetics/>
+                        </Route>
+                        <Route path="/page">
+                            <CosmeticsPage/>
                         </Route>
                         <Route path="/">
                             <Main/>

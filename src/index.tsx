@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import "./styles/checkbox.scss";
 import "./styles/field.scss";
 import "./styles/login-header.scss";
+import "./styles/button.scss";
 
 ReactDOM.render(
     <React.StrictMode>
