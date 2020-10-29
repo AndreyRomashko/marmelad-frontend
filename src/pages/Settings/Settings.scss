@@ -1,0 +1,46 @@
+.settings {
+  &__content-container {
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 24px;
+  }
+
+  &__user {
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    &-email {
+      opacity: 0.7;
+      font-size: 16px;
+      line-height: 22px;
+      color: #FDEAE3;
+    }
+
+    &-role {
+      opacity: 0.7;
+      font-size: 16px;
+      line-height: 22px;
+      color: #FDEAE3;
+    }
+  }
+
+  &__link {
+    &-icon {
+      width: fit-content;
+      bottom: 96px;
+      position: absolute;
+      left: 43%;
+    }
+  }
+}
+
+
+@media only screen and (max-height: 579px) {
+  .settings__link-icon {
+    margin: 0 auto;
+    position: initial;
+  }
+}

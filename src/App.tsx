@@ -12,6 +12,8 @@ import DockMenu from "./components/DockMenu/DockMenu";
 import Cosmetics from "./pages/Cosmetics/Cosmetics";
 import CosmeticsPage from "./pages/Cosmetics/Page/CosmeticsPage";
 import AddNewCosmetics from "./pages/Cosmetics/AddNewCosmetics/AddNewCosmetics";
+import Settings from "./pages/Settings/Settings";
+import Language from "./pages/Settings/Language/Language";
 
 function App() {
     return (
@@ -33,8 +35,14 @@ function App() {
                         <Route path="/cosmetics">
                             <Cosmetics/>
                         </Route>
+                        <Route path="/language">
+                            <Language/>
+                        </Route>
                         <Route path="/page">
                             <CosmeticsPage/>
+                        </Route>
+                        <Route path="/settings">
+                            <Settings/>
                         </Route>
                         <Route path="/">
                             <Main/>
@@ -42,7 +50,6 @@ function App() {
                     </Switch>
                 </div>
                 {/*<DockMenu/>*/}
-
             </Router>
         </div>
     );

@@ -1,0 +1,36 @@
+.settings-navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 33px;
+    color: #EFAAA1;
+    margin-bottom: 32px;
+
+    &-link {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 24px;
+      line-height: 33px;
+      color: #EFAAA1;
+
+      &-container {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  &__language {
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FDEAE3;
+  }
+}
