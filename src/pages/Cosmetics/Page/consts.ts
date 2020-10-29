@@ -1,1 +1,0 @@
-export const BUTTON_MIN_HEIGHT = 375;

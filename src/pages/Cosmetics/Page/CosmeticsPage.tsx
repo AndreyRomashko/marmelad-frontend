@@ -1,8 +1,7 @@
-import React, {useMemo} from 'react';
+import React from 'react';
 import BackButton from "../../../components/BackButton/BackButton";
 import concealer from "./imgs/concealer.jpg";
 import "./CosmeticsPage.scss";
-import {BUTTON_MIN_HEIGHT} from './consts';
 
 const CosmeticsPage: React.FC = () => {
     return (
@@ -16,7 +15,7 @@ const CosmeticsPage: React.FC = () => {
                         Macadamia natural oil
                          </span>
                         <br/>
-                        <span className="cosmetics-page__seller">
+                        <span className="cosmetics-page__brand">
                         by cristal milk
                     </span>
                     </div>

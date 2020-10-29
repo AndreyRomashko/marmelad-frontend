@@ -1,0 +1,57 @@
+.delete-popup {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #252525b7;
+
+  &__container {
+    background: #353535;
+    border-radius: 8px;
+    position: absolute;
+    top: 36%;
+    margin: 0 16px;
+    width: calc(100% - 80px);
+    padding: 32px 24px 24px 24px;
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: left;
+    color: #FDEAE3;
+    margin: 0;
+  }
+
+  &__buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+  }
+
+  &__button {
+    &-decline {
+      width: 154px;
+      font-size: 16px;
+      line-height: 22px;
+      color: #911838;
+      border: none;
+      height: 54px;
+      background: #FDEAE3;
+      margin-right: 34px;
+      border-radius: 8px;
+    }
+
+    &-accept {
+      width: 154px;
+      background: #911838;
+      border-radius: 8px;
+      font-size: 16px;
+      border: none;
+      height: 54px;
+      color: #FDEAE3;
+      line-height: 22px;
+    }
+  }
+
+}
