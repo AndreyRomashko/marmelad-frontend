@@ -28,7 +28,7 @@ const CosmeticsPage: React.FC = () => {
                     the firmness and elasticity of the skin, while vitamins and natural plant extracts enhance
                     microcirculation, have a powerful antioxidant effect, improve skin color and microrelief.
                 </p>
-                <button className="main-button">
+                <button className="button__main">
                     Add to card
                 </button>
             </div>

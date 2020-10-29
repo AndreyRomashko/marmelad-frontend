@@ -11,6 +11,7 @@ import Main from "./pages/Main/Main";
 import DockMenu from "./components/DockMenu/DockMenu";
 import Cosmetics from "./pages/Cosmetics/Cosmetics";
 import CosmeticsPage from "./pages/Cosmetics/Page/CosmeticsPage";
+import AddNewCosmetics from "./pages/Cosmetics/AddNewCosmetics/AddNewCosmetics";
 
 function App() {
     return (
@@ -22,6 +23,9 @@ function App() {
                     <Switch>
                         <Route path="/auth">
                             <Authorization/>
+                        </Route>
+                        <Route path="/add-new-cosmetics">
+                            <AddNewCosmetics/>
                         </Route>
                         <Route path="/products">
                             <Products/>

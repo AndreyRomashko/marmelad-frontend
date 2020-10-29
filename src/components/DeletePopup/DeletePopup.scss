@@ -28,30 +28,4 @@
     justify-content: space-between;
     margin-top: 48px;
   }
-
-  &__button {
-    &-decline {
-      width: 154px;
-      font-size: 16px;
-      line-height: 22px;
-      color: #911838;
-      border: none;
-      height: 54px;
-      background: #FDEAE3;
-      margin-right: 34px;
-      border-radius: 8px;
-    }
-
-    &-accept {
-      width: 154px;
-      background: #911838;
-      border-radius: 8px;
-      font-size: 16px;
-      border: none;
-      height: 54px;
-      color: #FDEAE3;
-      line-height: 22px;
-    }
-  }
-
 }

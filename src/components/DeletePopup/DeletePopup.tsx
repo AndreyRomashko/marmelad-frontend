@@ -9,10 +9,10 @@ const DeletePopup: React.FC = () => {
                     Delete Macadamia natural oil?
                 </h1>
                 <div className="delete-popup__buttons-container">
-                    <button className="delete-popup__button-decline">
+                    <button className="button__decline">
                         No
                     </button>
-                    <button className="delete-popup__button-accept">
+                    <button className="button__decline">
                         Yes
                     </button>
                 </div>
