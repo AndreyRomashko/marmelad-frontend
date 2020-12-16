@@ -8,12 +8,12 @@ import {
 import Authorization from "./pages/Authorization/Authorization";
 import Products from "./pages/Products/Products";
 import Main from "./pages/Main/Main";
-import DockMenu from "./components/DockMenu/DockMenu";
 import Cosmetics from "./pages/Cosmetics/Cosmetics";
 import CosmeticsPage from "./pages/Cosmetics/Page/CosmeticsPage";
 import AddNewCosmetics from "./pages/Cosmetics/AddNewCosmetics/AddNewCosmetics";
 import Settings from "./pages/Settings/Settings";
 import Language from "./pages/Settings/Language/Language";
+import Menu from "./components/Menu/Menu";
 
 function App() {
     return (
@@ -29,7 +29,7 @@ function App() {
                         <Route path="/add-new-cosmetics">
                             <AddNewCosmetics/>
                         </Route>
-                        <Route path="/products">
+                        <Route path="/services">
                             <Products/>
                         </Route>
                         <Route path="/cosmetics">
@@ -49,7 +49,7 @@ function App() {
                         </Route>
                     </Switch>
                 </div>
-                {/*<DockMenu/>*/}
+                <Menu/>
             </Router>
         </div>
     );

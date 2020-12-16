@@ -14,13 +14,13 @@ const Registration: React.FC = () => {
             <Formik
                 initialValues={{email: '', password: '', checked: []}}
                 onSubmit={(event) => console.log(event)}>
-                {({}) => (
+                {() => (
                     <Form className="registration__form">
                         <Fields/>
                         <PasswordInfo/>
                         <label className="checkbox__label">
                             <Field type="checkbox" name="checked" value="Agree" className="registration__form-input"/>
-                            <span className="checkbox__checkmark"></span>
+                            <span className="checkbox__checkmark"/>
                             I read and agree with&nbsp;
                             <a className="registration__form-link">
                                 privacy policy&nbsp;
