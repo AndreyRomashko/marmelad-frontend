@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react';
+import React from 'react';
 import {Field, Form, Formik} from "formik";
 import Buttons from "../Common/Buttons/Buttons";
 import "./Registration.scss";
@@ -22,11 +22,11 @@ const Registration: React.FC = () => {
                             <Field type="checkbox" name="checked" value="Agree" className="registration__form-input"/>
                             <span className="checkbox__checkmark"/>
                             I read and agree with&nbsp;
-                            <a className="registration__form-link">
+                            <a href="/#" className="registration__form-link">
                                 privacy policy&nbsp;
                             </a>
                             and&nbsp;
-                            <a className="registration__form-label-link">
+                            <a  href="/#" className="registration__form-label-link">
                                 terms of service
                             </a>
                         </label>

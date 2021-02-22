@@ -19,7 +19,7 @@ const Settings: React.FC = () => {
                 </span>
                 </div>
                 <Navbar/>
-                <a href="https://www.instagram.com/" target="_blank" className="settings__link">
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"  className="settings__link">
                     <ReactSVG src={instagramIcon} className="settings__link-icon"/>
                 </a>
             </div>

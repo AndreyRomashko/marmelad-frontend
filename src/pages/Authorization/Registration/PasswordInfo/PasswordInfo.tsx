@@ -3,8 +3,8 @@ import "./PasswordInfo.scss";
 import {PASSWORD_INFO_MIN_HEIGHT} from "../../сonsts";
 
 const PasswordInfo: React.FC = () => {
-    const windowHeight = useMemo(() => window.screen.height, [window]);
-    const showLongPasswordInfo = useMemo(() => windowHeight >= PASSWORD_INFO_MIN_HEIGHT, [windowHeight, PASSWORD_INFO_MIN_HEIGHT]);
+    const windowHeight = useMemo(() => window.screen.height, []);
+    const showLongPasswordInfo = useMemo(() => windowHeight >= PASSWORD_INFO_MIN_HEIGHT, [windowHeight]);
 
     return <ul className="password-info-list">
         {showLongPasswordInfo ? <>

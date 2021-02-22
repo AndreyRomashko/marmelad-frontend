@@ -7,7 +7,7 @@ const CosmeticsPage: React.FC = () => {
     return (
         <div className="cosmetics-page">
             <BackButton/>
-            <img src={concealer} className="cosmetics-page__image"/>
+            <img alt={concealer} src={concealer} className="cosmetics-page__image"/>
             <div className="cosmetics-page__info">
                 <div className="cosmetics-page__info-header">
                     <div className="cosmetics-page__name-container">

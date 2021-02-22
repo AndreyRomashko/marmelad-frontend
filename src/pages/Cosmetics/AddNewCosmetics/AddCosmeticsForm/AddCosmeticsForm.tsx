@@ -7,7 +7,7 @@ const AddCosmeticsForm: React.FC = () => {
         <Formik
             initialValues={{productName: '', brandName: '', price: '', description: ''}}
             onSubmit={(event) => console.log(event)}>
-            {({}) => (
+            {() => (
                 <Form className="add-cosmetics-form">
                     <label className="field__label">
                         Product name

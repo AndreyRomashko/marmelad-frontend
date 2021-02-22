@@ -12,7 +12,7 @@ const Login: React.FC = () => {
             <Formik
                 initialValues={{email: '', password: '', checked: []}}
                 onSubmit={(event) => console.log(event)}>
-                {({}) => (
+                {() => (
                     <Form className="login__form">
                         <label className="field__label">
                             Email
