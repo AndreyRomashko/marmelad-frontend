@@ -1,0 +1,1 @@
+export const PASSWORD_INFO_MIN_HEIGHT: number = 720;

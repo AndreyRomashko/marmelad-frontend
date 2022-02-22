@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import {
     BrowserRouter as Router,
     Switch,
@@ -8,31 +8,48 @@ import {
 import Authorization from "./pages/Authorization/Authorization";
 import Products from "./pages/Products/Products";
 import Main from "./pages/Main/Main";
-import DockMenu from "./components/DockMenu/DockMenu";
-import Rectangle from "./components/Rectangle/Rectangle";
+import Cosmetics from "./pages/Cosmetics/Cosmetics";
+import CosmeticsPage from "./pages/Cosmetics/Page/CosmeticsPage";
+import AddNewCosmetics from "./pages/Cosmetics/AddNewCosmetics/AddNewCosmetics";
+import Settings from "./pages/Settings/Settings";
+import Language from "./pages/Settings/Language/Language";
+import Menu from "./components/Menu/Menu";
 
 function App() {
     return (
         <div className="App">
             <Router>
                 <div>
-                    <Rectangle/>
                     {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
                     <Switch>
                         <Route path="/auth">
                             <Authorization/>
                         </Route>
-                        <Route path="/products">
+                        <Route path="/add-new-cosmetics">
+                            <AddNewCosmetics/>
+                        </Route>
+                        <Route path="/services">
                             <Products/>
+                        </Route>
+                        <Route path="/cosmetics">
+                            <Cosmetics/>
+                        </Route>
+                        <Route path="/language">
+                            <Language/>
+                        </Route>
+                        <Route path="/page">
+                            <CosmeticsPage/>
+                        </Route>
+                        <Route path="/settings">
+                            <Settings/>
                         </Route>
                         <Route path="/">
                             <Main/>
                         </Route>
                     </Switch>
                 </div>
-                <DockMenu/>
-
+                <Menu/>
             </Router>
         </div>
     );

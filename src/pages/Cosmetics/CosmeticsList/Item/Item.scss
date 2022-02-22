@@ -1,0 +1,61 @@
+.cosmetics-list-item {
+  padding: 0;
+  margin: 0 0 15px 0;
+  width: 175px;
+
+  &__img {
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+
+    &-container {
+      position: relative;
+    }
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 16px;
+    color: #FDEAE3;
+    margin-left: 15%;
+
+    &-icon {
+      margin-top: 11px;
+
+      &-container {
+        width: 36px;
+        background: #911838;
+        border-radius: 8px 0;
+        height: 36px;
+      }
+    }
+
+    &-container {
+      background: #353535;
+      border-radius: 8px 0;
+      width: 50%;
+      position: absolute;
+      display: flex;
+      height: 36px;
+      align-items: center;
+      justify-content: space-between;
+      right: 0;
+      bottom: 2px;
+    }
+  }
+
+  &__product {
+    &-description {
+      margin-top: 8px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 22px;
+      color: #FDEAE3;
+    }
+
+    &-name {
+      font-weight: bold;
+    }
+  }
+}

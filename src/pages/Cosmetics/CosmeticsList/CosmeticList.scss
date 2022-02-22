@@ -1,0 +1,16 @@
+.cosmetics-list {
+  margin: 24px 0 0 0;
+  list-style: none;
+  padding: 0 16px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100vh;
+  display: flex;
+  width: calc(100% - 32px);
+}
+
+@media only screen and (max-width: 382px) {
+  .cosmetics-list {
+    justify-content: center;
+  }
+}

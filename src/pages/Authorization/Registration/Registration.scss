@@ -1,0 +1,23 @@
+.registration {
+  width: 100%;
+  height: 100vh;
+  padding-top: 17px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+    max-width: 400px;
+    @media screen and (max-width: 500px) {
+      margin: 0 56px;
+    }
+    @media screen and (max-width: 376px) {
+      margin: 0 45px;
+    }
+    &-link {
+      color: #EFAAA1;
+    }
+  }
+}
